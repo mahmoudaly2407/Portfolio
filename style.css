@@ -71,7 +71,7 @@ header{
     padding: 3px;
     display: none;
 }
-.menu i {
+.menu i{
     color: var(--hover-color);
 }
 
@@ -92,8 +92,11 @@ section{
     text-transform: capitalize;
 }
 .home-content h1{
-    font-size: var(--big-font);
+    font-size: 4vw;
     font-weight: 700;
+}
+.word{
+
 }
 .home-content .change-text{
     font-size: 1.6rem;
@@ -104,6 +107,7 @@ section{
     display: inline-flex;
     margin: 0;
     vertical-align: top;
+    height: 34px;
 }
 .home-content h3 .word{
     position: absolute;
@@ -215,7 +219,7 @@ section{
     position: relative;
 }
 .box-image{
-    text-align: right;    
+    text-align: center;    
 }
 .box-image img{
     width: 100%;
@@ -224,7 +228,6 @@ section{
 .home-image .liqued-shape{
     position: absolute;
     top: 0;
-    left: 10%;
     height: 100%;
     width: 100%;
     z-index: -1;
@@ -673,7 +676,7 @@ footer a i{
 
 
 @media (max-width: 767px){
-        .nav{
+    .nav{
         display: none;
         position: absolute;
         bottom: 0;
@@ -687,7 +690,6 @@ footer a i{
     .nav li{
         margin-bottom: 15px
     }
-
     .word{
         font-size: 1.5rem;
     }
@@ -700,12 +702,11 @@ footer a i{
         display: none;
     }
     section{
-        padding: 40px 2%;
+        padding: 40px 4%;
     }
     header{
-        padding: 20px 2%;
+        padding: 20px 4%;
         position: relative;
-
     }
     .services-section .card p{
         max-width: 100%;
@@ -733,8 +734,11 @@ footer a i{
     .menu{
         display: block;
     }
+    .services-section .card .btn{
+        margin-top: 20px;
+    }
 }
-@media (min-width: 768px){
+@media (min-width: 768px) and (max-width: 992px){
     section{
         padding: 100px 2%;
     }
