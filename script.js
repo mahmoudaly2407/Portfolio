@@ -56,7 +56,7 @@ circles.forEach(elem=>{
     for(let i = 0; i<percent ; i++){
         pointsmarked[i].classList.add('marked')
     }
-
+})
     function calc (ope) {
     if (ope == 'a') 
     document.getElementById("nav").style.display = "block";
