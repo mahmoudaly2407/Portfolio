@@ -66,11 +66,13 @@ header{
     font-size: 1.6rem;
     z-index: 1000;
     cursor: pointer;
-    background-color: var(--hover-color);
     border-radius: 3px;
     color: var(--second-bg);
     padding: 3px;
     display: none;
+}
+.menu i {
+    color: var(--hover-color);
 }
 
 section{
