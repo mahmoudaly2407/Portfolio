@@ -57,7 +57,8 @@ circles.forEach(elem=>{
         pointsmarked[i].classList.add('marked')
     }
 })
-    function calc (ope) {
+
+function calc (ope) {
     if (ope == 'a') 
     document.getElementById("nav").style.display = "block";
     document.getElementsByClassName("fa-bars")[0].style.display = "none";
@@ -69,5 +70,3 @@ function cal (ope) {
     document.getElementsByClassName("fa-bars")[0].style.display = "block";
     document.getElementsByClassName("fa-xmark")[0].style.display = "none";
 }
-
-})
