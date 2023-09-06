@@ -56,4 +56,18 @@ circles.forEach(elem=>{
     for(let i = 0; i<percent ; i++){
         pointsmarked[i].classList.add('marked')
     }
+
+    function calc (ope) {
+    if (ope == 'a') 
+    document.getElementById("nav").style.display = "block";
+    document.getElementsByClassName("fa-bars")[0].style.display = "none";
+    document.getElementsByClassName("fa-xmark")[0].style.display = "block";
+}
+function cal (ope) {
+    if (ope == 'b') 
+    document.getElementById("nav").style.display = "none";
+    document.getElementsByClassName("fa-bars")[0].style.display = "block";
+    document.getElementsByClassName("fa-xmark")[0].style.display = "none";
+}
+
 })
