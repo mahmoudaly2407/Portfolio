@@ -95,27 +95,26 @@ section{
     font-size: 4vw;
     font-weight: 700;
 }
-.word{
-
-}
 .home-content .change-text{
     font-size: 1.6rem;
     font-weight: 600;
     text-transform: capitalize;
+    position: relative;
 }
 .home-content h3{
     display: inline-flex;
     margin: 0;
     vertical-align: top;
-    height: 34px;
 }
 .home-content h3 .word{
     position: absolute;
+    top: 0;
+    height: -webkit-fill-available;
     display: flex;
     opacity: 0;
     color: var(--hover-color);
     align-items: center;
-    height: 34px;
+    font-size: 2.5vw;
 }
 .home-content h3 .word .letter{
     transform-origin: center center 25px;
@@ -133,6 +132,7 @@ section{
 .home-content p{
     color: #bdbdbd;
     line-height: 1.6;
+    margin-top: 15px;
 }
 .btn{
     margin: 25px 0px;
@@ -188,9 +188,10 @@ section{
     background-color: var(--main-bg);
     box-shadow: 0 0 0.3rem var(--hover-color);
     border: 2px solid var(--hover-color);
-    border-radius: 5px;
+    border-radius: 15px;
     transition: var(--transition);
     position: relative;
+    overflow: hidden;
 }
 .social a i{
     font-size: 1.5rem;
@@ -267,7 +268,7 @@ h2{
 .about-content h3{
     font-weight: 600;
     font-size: 1.5rem;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.5rem 0px;
 }
 .about-content p{
     color: #fdfdfd;
@@ -524,7 +525,6 @@ h2{
     text-align: center;
 }
 .filter-buttons .port-btn{
-    width: 80px;
     background-color: var(--hover-color);
     box-shadow: var(--neon-shadow);
     border-radius: 4px;
@@ -672,7 +672,27 @@ footer a i{
     border-radius: 5rem;
 }
 
+.scroll-scale{
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 1.5s;
+}
 
+.scroll-bottom{
+    opacity: 0;
+    transform: translateY(300px);
+    transition: 2s;
+}
+.scroll-top{
+    opacity: 0;
+    transform: translateY(-300px);
+    transition: 3s;
+}
+
+.show-items{
+    opacity: 1;
+    transform: translatex(0);
+}
 
 
 @media (max-width: 767px){
