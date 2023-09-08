@@ -70,3 +70,22 @@ function cal (ope) {
     document.getElementsByClassName("fa-bars")[0].style.display = "block";
     document.getElementsByClassName("fa-xmark")[0].style.display = "none";
 }
+
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show-items");
+        }else{
+            entry.target.classList.remove("show-items");
+        }
+    })
+})
+
+const scrollscale = document.querySelectorAll(".scroll-scale");
+scrollscale.forEach((el)=>observer.observe(el));
+
+const scrollbottom = document.querySelectorAll(".scroll-bottom");
+scrollbottom.forEach((el)=>observer.observe(el));
+
+const scrolltop = document.querySelectorAll(".scroll-top");
+scrolltop.forEach((el)=>observer.observe(el));
